@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="apple-touch-icon" sizes="180x180" href="ikon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="ikon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="ikon/favicon-16x16.png">
+  <link rel="manifest" href="ikon/site.webmanifest">
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <title>Sunrise</title>
+    <style>
+
+  </style>
+  </head>
+  <body id="pois">
+    <!-- Навигация !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__wrap">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <a href="index.html" class="logo"><img src="image/chrome_1W2OzMnl1K.png" /></a>
+          <ul class="menu" id="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="FILMS.html">Фильмы</a></li>
+            <li><a href="SERIALS.html">Сериалы</a></li>
+            <li><a href="MULT.html">Мультфильмы</a></li>
+            <li id="poiskowik"><a href="#">
+              <form class="poick_os" onsubmit="document.getElementById('sfSbm').disabled=true" >  
+              <input id="elastic" class="poick_pole" type="text" name="q" maxlength="45" value="Поиск..." onclick="if (this.value >=''){this.value=''};return false;" />  
+              <input onclick="poisk('#elastic'); izmeWidth('pois'); return false;" class="poick_knopka" type="button" value="Найти" />  
+              <!-- <input type="hidden" name="t" value="0"  />   -->
+              </form></a></li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+    <div class="popup" id="popup"></div>
+<!-- Навигация ЗАКРЫТА !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <header class="header">
+        <div class="content">
+<!-- Cлайдер !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+          <div class="pedenus-slaidera">
+            <div class="sended-nesunam">
+            <div class="design-mansecus">
+            <div class="design-mansecu">
+            <a href="Avatar.html"><img class="img-naminks" src="image/avatar2.jpeg"></a>
+            </div>
+            <div class="design-mansecu">
+              <a href="Adam.html"><img class="img-naminks" src="image/blackadam.jpeg"></a>
+            </div>
+            <div class="design-mansecu">
+              <a href="Cat.html"><img class="img-naminks" src="image/cat.jpeg"></a>
+            </div>
+            <div class="design-mansecu">
+              <a href="Knife.html"><img class="img-naminks" src="image/Glass.jpeg"></a>
+            </div>
+            <div class="design-mansecu">
+              <a href="Panther.html"><img class="img-naminks" src="image/wakanda.jpeg"></a>
+              </div>
+            </div>
+            </div>
+            <a class="educas-nsution educas-nsution_prev" href="#" role="button"></a>
+            <a class="educas-nsution educas-nsution_next" href="#" role="button"></a>
+            </div>
+<!-- Cлайдер  ЗАКОНЧИЛСЯ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        </div>
+    </header>
+    <main class="main" >
+      <div class="cont"  >
+        <div class="content" id="xyz">
+<!-- Блоки фильмов  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+          <div class="row">
+            <div class="column">
+              <a href="Avatar.html"><img class="foto" src="image/mainavatar.jpeg"/> <figcaption>Аватар 2:Путь воды</figcaption></a>
+            </div>
+            <div class="column">
+              <a href="Adam.html"><img class="foto" src="image/mainblackadam.jpeg"/> <figcaption>Черный Адам</figcaption></a>
+            </div>
+            
+            <div class="column">
+              <a href="Knife.html"><img class="foto" src="image/mainglass.jpeg"/> <figcaption>Достать ножи 2</figcaption></a>
+            </div>
+            <div class="column">
+              <a href="Panther.html"><img class="foto" src="image/mainwakanda.jpeg"/> <figcaption>Черная Пантера 2</figcaption></a>
+            </div>
+
+          </div>
+
+<!-- Блоки ЗАКОНЧИЛИСЬ  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+      </div>
+    </div>
+    </main>
+
+    <footer class="clr"> 
+      <div class="h-footer"> 
+      <div class="container"> 
+      <div class="h-footer-tab"> 
+      <div class="h-footer-co1"> 
+      <div class="h-f-title">Sunrize.ru</div> 
+      <div class="h-f-content"> 
+        Платформа для просмотра кино 
+      </div> 
+      
+      </div> 
+      <div class="h-footer-co2"> 
+      <div class="h-f-title">Помощь</div> 
+      <ul> 
+      <li><a href="Error.html">Обратная связь</a></li> 
+      <li><a href="Error.html">Техническая поддержка</a></li> 
+      <li><a href="#"></a></li> 
+      <li><a href="#"></a></li> 
+      </ul> 
+      </div> 
+      <div class="h-footer-co3"> 
+      <div class="h-f-title">Правила</div> 
+      <ul> 
+      <li><a href="Error.html">Условия использования</a></li> 
+      <li><a href="#"></a></li> 
+      <li><a href="#"></a></li> 
+      <li><a href="#"></a></li> 
+      </ul> 
+      </div> 
+      </div> 
+      </div> 
+      </div> 
+      <div class="h-copyright">© 2006-2023 «Sunrize» – все права защищены. 
+      </footer>
+
+    <script src="scripts/script1.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

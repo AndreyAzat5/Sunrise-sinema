@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="ikon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ikon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ikon/favicon-16x16.png">
+    <link rel="manifest" href="ikon/site.webmanifest">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style1.css" />
+    <link href="https://vjs.zencdn.net/8.0.3/video-js.css" rel="stylesheet" />
+
+    <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+   
+    <title>Sunrise</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+<!-- Навигация !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__wrap">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <a href="index.html" class="logo"><img src="image/chrome_1W2OzMnl1K.png" /></a>
+          <ul class="menu" id="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Фильмы</a></li>
+            <li><a href="#">Сериалы</a></li>
+            <li><a href="#">Мультфильмы</a></li>
+            
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="popup" id="popup"></div>
+<!-- Навигация ЗАКРЫТА !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    
+    <main class="main">
+      <div class="container">
+        <div class="content">
+          <div class="cont"> 
+            <div class="imgprev"><img src="image/MainDragon.jpeg"/></div>
+            <div class="dannie"><h1>Как приручить дракона 3</h1>
+                <ul> 
+                    <li> <p><div class="textopis1">Жанр:</div> <div class="textopis2">Мультфильм</div> </p></li>
+                    <li> <p><div class="textopis1">Режиссер:</div> <div class="textopis2">Дин ДеБлуа</div> </p></li> 
+                    <li> <p><div class="textopis1">В ролях:</div> <div class="textopis2">Джей Барушель, Америка Феррера, Ф. Мюррэй Абрахам, Кейт Бланшетт, Джерард Батлер, Крэйг Фергюсон, Джона Хилл, Кристофер Минц-Плассе, Кристен Уиг, Кит Харингтон</div> </p></li>
+                    <li> <p><div class="textopis1">Страна:</div> <div class="textopis2">США, Япония</div> </p></li>
+                    <li> <p><div class="textopis3">Продолжительность:</div> <div class="textopis2">1 час 44 мин</div></p> </li>
+                    <li> <p><div class="textopis1">Премьера:</div> <div class="textopis2">21 февраля 2019</div></p> </li>
+                </ul>
+            </div> 
+        
+            <div class="opisanie">
+                <h1>Описание фильма</h1>
+                <p >Когда-то викинги жили в гармонии с драконами. В те времена они делили радость, горе… и последние штаны. Казалось, что так будет всегда, но появление загадочной Дневной Фурии изменило жизнь острова. 
+                  И теперь Иккинг и Беззубик столкнутся с безжалостным охотником на драконов, жаждущим уничтожить все, что им дорого.</p>
+                  
+                  <a href="#" onclick="showHide('blok_id'); izmeColor('blok'); return false;" id="blok" class="knopka1">Трейлер</a>
+                  <a href="#" onclick="showHide('blok_1'); izmeColor('blok_2'); return false;" id="blok_2" class="knopka2">Фильм</a>
+     
+<!-- БЛОК ВИДЕО !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+                      <div class="videoss">
+                      <div class="thumb-wrap" id="blok_id">
+                    <iframe src="https://www.youtube.com/embed/x54gYUGrZ6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                  </div>
+                <br>
+                      <div class="trailer" id="blok_1">
+                  <video 
+                      id="my-video"
+                      class="video-js"
+                      controls
+                      preload="auto"
+                      data-setup="{}"
+                   >
+                  <source src="films/avatar.mp4" type="video/mp4" />
+              <!-- <source src="MY_VIDEO.webm" type="video/webm" /> -->
+                   </video>
+                    </div>
+                  </div>
+<!-- БЛОК ВИДЕО ЗАКОНЧИЛСЯ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+                 <h1 class="obzatss">.</h1>
+<!-- БЛОК кОММЕНТАРИЕВ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+                 <!-- <img src="" alt=""> -->
+                 <div class="kom">
+                  <h1 class="namekom">Оставить комментарий</h1>
+                    <form class="decor">
+                      <div class="form-inner">
+                      
+                      <input id="state" type="text" placeholder="Ваше имя">
+                      <input  type="email" placeholder="Ваш email">
+                      <textarea id="komento" placeholder="Текст комментария..." rows="3"></textarea>
+                      <input onclick="out();return false;" type="submit" value="Оставить комментарий">
+                      </div>
+                      
+                      </form>
+                      <div class="blollomm">
+                        <div id="out">Комментарии к фильму: 
+                          
+                          <div class="userkoment">
+                            <img src="ikon/avatarkaIkon.png"/>
+                            <div class="boxtextuser">Андрей<br>
+                              <p class="textuser">Посмотрел, довольно таки интересный фильм</p>
+                            </div>
+                          </div>
+  
+                          <div class="userkoment">
+                            <img src="ikon/avatarkaIkon.png"/>
+                            <div class="boxtextuser">Виктор<br>
+                              <p class="textuser">можно глянуть</p>
+                            </div>
+                          </div>
+  
+                        </div>
+                      </div>
+                  </div>
+<!-- БЛОК КОММЕНТАРИЕВ ЗАКОНЧИЛСЯ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+                </div>
+            </div>
+            </div>
+          </div>
+        
+      </main>
+      
+        
+<!-- БЛОК ПОДВАЛА !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+      <footer class="clr"> 
+      <div class="h-footer"> 
+      <div class="container"> 
+      <div class="h-footer-tab"> 
+      <div class="h-footer-co1"> 
+      <div class="h-f-title">Sunrize.ru</div> 
+      <div class="h-f-content"> 
+      Платформа для просмотра кино 
+      </div> 
+      </div> 
+      <div class="h-footer-co2"> 
+      <div class="h-f-title">Помощь</div> 
+      <ul> 
+      <li><a href="#">Обратная связь</a></li> 
+      <li><a href="#">Техническая поддержка</a></li> 
+      <li><a href="#"></a></li> 
+      <li><a href="#"></a></li> 
+      </ul> 
+      </div> 
+      <div class="h-footer-co3"> 
+      <div class="h-f-title">Правила</div> 
+      <ul> 
+      <li><a href="#">Условия использования</a></li> 
+      <li><a href="#"></a></li> 
+      <li><a href="#"></a></li> 
+      <li><a href="#"></a></li> 
+      </ul> 
+      </div> 
+      </div> 
+      </div> 
+      </div> 
+      <div class="h-copyright">© 2006-2023 «Sunrize» – все права защищены. 
+      </footer>
+<!-- БЛОК ПОДВАЛА !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+      <!-- <script src="https://vjs.zencdn.net/8.0.3/video.min.js"></script> -->
+      <script src="scripts/script.js"> </script>
+    </body>
+  </html>

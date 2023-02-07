@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  height: 100%;
+}
+
+
+
+.header {
+  flex: 0 0 auto;
+  background-color: #212429;
+  margin-top: 75px;
+}
+
+.header h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.main {
+  /* background-color: #fafafa; */
+  flex: 1 0 auto;
+  background: url(galaktika1.jpg);
+  background-size:150% 120%;  
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 15px;
+  /* background-color: rgba(255, 255, 255, 0.75); */
+}
+
+.cont{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 15px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.footer {
+  background-color: #212429;
+  flex: 0 0 auto;
+}
+
+.content {
+  padding: 50px 0;
+  
+}
+
+p {
+  margin-bottom: 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  /* margin-bottom: 40px; */
+}
+
+
+/* стили основного контейнера слайдера */
+.pedenus-slaidera {
+  position: relative;
+  overflow: hidden;
+  max-width: 850px;
+  max-height: 350px;
+  /* max-height: 20%; */
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+
+  /* стили для обёртки, в которой заключены слайды */
+  .sended-nesunam {
+  position: relative;
+  overflow: hidden;
+  }
+
+  /* стили для контейнера слайдов */
+  .design-mansecus {
+  display: flex;
+  transition: transform 0.6s ease;
+  }
+
+  /* стили для слайдов */
+  .design-mansecu {
+  flex: 0 0 100%;
+  max-width: 100%;
+  }
+
+  /* стили для кнопок "вперед" и "назад" */
+  .educas-nsution {
+  position: absolute;
+  top: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  height: 50px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  }
+
+  .educas-nsution_show {
+  display: flex;
+  }
+
+  .educas-nsution:hover,
+  .educas-nsution:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+  }
+
+  .educas-nsution_prev {
+  left: 0;
+  }
+
+  .educas-nsution_next {
+  right: 0;
+  }
+
+  .educas-nsution::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+  }
+
+  .educas-nsution_prev::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+
+  .educas-nsution_next::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  }
+
+  /* стили для индикаторов */
+  .coevened-ucadional {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  }
+
+  .coevened-ucadional li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 4px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.77);
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  }
+
+  .coevened-ucadional li.kunovenas {
+  background-color: #fff;
+  }
+
+  .img-naminks {
+  display: inline-block;
+  height: 77%;
+  width: 100%;
+  object-fit: fill;
+  /* max-height: 80%;
+  margin-left: 5%; */
+  }
+
+
+.navbar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background: #2B3372;
+}
+
+.navbar__wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hamb {
+  display: none;
+}
+
+.popup {
+  display: none;
+}
+
+.logo {
+  /* text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold; */
+  /* text-transform: uppercase; */
+  display: flex;
+  /* align-items: center; */
+}
+
+.menu > li > a {
+  text-decoration: none;
+}
+
+.navbar__wrap .menu {
+  display: flex;
+}
+
+.navbar__wrap .menu > li {
+  display: flex;
+  align-items: stretch;
+}
+
+.navbar__wrap .menu > li > a {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar__wrap .menu > li > a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 1000px) {
+  .navbar__wrap .menu {
+    display: none;
+  }
+  .hamb {
+    display: flex;
+    align-items: center;
+  }
+  .hamb__field {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: #fff;
+    transition: 0.2s;
+  }
+  .popup {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 100;
+    display: flex;
+    transition: 0.3s;
+  }
+  .popup.open {
+    left: 0;
+  }
+  .popup .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 50px 0;
+    overflow: auto;
+  }
+  .popup .menu > li {
+    width: 100%;
+  }
+  .popup .menu > li > a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3f3f3f;
+  }
+  .popup .menu > li > a:hover {
+    background-color: rgba(122, 82, 179, 0.1);
+  }
+  .hamb__field.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamb__field.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamb__field.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  body.noscroll {
+    overflow: hidden;
+  }
+  #poiskowik{
+    display: none;
+  }
+}
+
+
+
+
+
+a{
+  text-decoration: none;
+}
+/* .column a {
+   margin-bottom:5px;
+   margin-left:5px;
+   text-decoration:none;
+   border:solid black;
+   border-radius:15px;
+} */
+
+.column figcaption {
+   border-radius:0px 0px 15px 15px;
+   position:absolute;
+   color:white;
+   padding:15px;
+   margin-top: -3.3vw;
+   position:relative;
+   opacity:0;
+   white-space:nowrap;
+   background:linear-gradient(to top, black 0%, transparent 100%);
+   font-size:1vw;
+}
+
+
+
+/* .container figcaption:hover {
+	text-decoration:none;
+    white-space:nowrap;
+    background:linear-gradient(to top, black 0%, transparent 100%);
+	opacity:1;
+} */
+
+.column a:hover figcaption {
+		opacity:1;
+}
+
+.foto {
+  transition: filter .1s ease-in-out;
+  -webkit-filter: grayscale(0%); 
+  filter: grayscale(0%); 
+  /* border:solid 5px rgba(0,0,0,0); */
+  transition: 0.2s;
+  border-radius:15px;
+}
+ 
+.foto:hover {
+  -webkit-filter: grayscale(99%); 
+  filter: grayscale(99%); 
+  border:none;
+  transform: scale(0.98);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: -2em;
+}
+
+/* Создайте четыре одинаковых столбца, которые находятся рядом друг с другом */
+.column {
+  /* flex: 33%; */
+  width: 19em;
+  height: 27em;
+  /* max-height: 21em; */
+  /* height: 30%; */
+  /* max-width: 33%; */
+  padding: 0 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+
+}
+
+/* Адаптивный макет - делает два столбца макет вместо четырех столбцов */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    margin-bottom: 2em;
+  }
+  .column figcaption{
+    font-size: large;
+    /* opacity: 1; */
+    text-align: center;
+  }
+}
+
+/* Адаптивный макет - делает два столбца стека друг на друга, а не рядом друг с другом */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+  }
+  .column figcaption{
+    font-size: large;
+    opacity: 1;
+    text-align: center;
+  }
+}
+
+
+
+/*************************************/ 
+/* .container {width:1100px;margin:0px auto}  */
+.h-footer {background:#2C2E32;padding:60px 0px;color:#fff;font-size:13px} 
+.h-footer a {color:#fff} 
+.h-footer-tab {display:table;width:100%} 
+.h-footer-co1, .h-footer-co2, .h-footer-co3 {display:table-cell;vertical-align:top} 
+.h-footer-co2, .h-footer-co3 {width:27%;padding-left:50px} 
+.h-f-title {font-size:16px;font-weight:bold;text-transform:uppercase;padding-bottom:19px;margin-bottom:19px;position:relative} 
+.h-f-title:after {content:'';width:90px;height:1px;position:absolute;bottom:0px;left:0px} 
+.h-f-title:after {background:#39d7ff;box-shadow:0px 1px 5px rgba(41,188,255,0.8)} 
+.h-f-content {font-size:13px;line-height:24px} 
+.h-copyright {background:#282828;padding:20px;text-align:center} 
+.h-copyright, .h-copyright a {color:#fff;text-decoration:none} 
+.h-copyright a:hover, .h-footer li a:hover {color:#39d7ff;text-decoration:none} 
+.h-footer ul, .h-footer li {list-style:none;padding:0;margin:0} 
+.h-footer li {margin-bottom:10px} 
+.h-top-link, .h-top-link:hover {display:none;cursor:pointer;width:48px;line-height:48px;text-align:center;background:#414141;color:#fff;position:fixed;right:30px;bottom:30px;border:0px!important;box-shadow:0px 3px 10px rgba(0,0,0,0.3)} 
+.h-top-link:hover {background:#38d6fe} 
+.h-top span i, .h-top a:hover {color:#39d7ff;} 
+.h-menu li ul {border-top:2px solid #4865e4;} 
+@media only screen and (max-width: 1180px) { 
+/* .container {width:auto;padding:0px 20px;}  */
+} 
+@media only screen and (max-width: 640px){ 
+.h-footer-co1, .h-footer-co2 {margin-bottom:30px} 
+.h-footer-tab, .h-footer-co1, .h-footer-co2, .h-footer-co3{display:block;width:100%;padding:0px;float:none} 
+} 
+/*******************************/ 
+
+
+
+
+
+
+
+
+
+
+/* Форма поиска синяя кнопка*/  
+.poick_os {  
+  float:left;  
+  padding:4px;  
+  width:200px;  
+  background:#fff;  
+  border: 1px solid #A0A8AC;  
+  }  
+
+  .poick_os input {  
+  float:left;  
+  margin:0px;  
+  vertical-align:middle;  
+  font:11px Verdana,Arial,Helvetica,sans-serif;  
+  }  
+
+  .poick_pole {  
+  color:#555;  
+  width:120px;  
+  height:20px;  
+  border:none;  
+  /* padding:6px 4px;   */
+  }  
+   
+  .poick_knopka {  
+  text-shadow: 1px 1px 1px #1061B0;  
+  width:70px;  
+  height:20px;  
+  cursor:pointer;  
+  background:#36A6FA;  
+  border:1px solid #2290e3;  
+  color:#fff; font-weight: bold!important;  
+  }  
+   
+  .poick_knopka:hover {background:#3c9fea;}  
+
+  .poick_os,  
+  .poick_knopka {  
+  -webkit-border-radius: 3px;  
+  -moz-border-radius: 3px;  
+  border-radius: 3px;  
+  }
