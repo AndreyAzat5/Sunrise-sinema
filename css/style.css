@@ -457,7 +457,7 @@ a{
 
   }
   .column figcaption{
-    border: 1px red solid;
+/*     border: 1px red solid; */
  
     font-size:11px;
     opacity: 1;
