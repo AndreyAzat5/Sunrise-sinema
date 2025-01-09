@@ -8,11 +8,40 @@
     <title>Shop</title>
 </head>
 <body>
+<style>
+    #form{
+    display:none;
+    text-align:center;
+    }
+</style>
     <div id="main">
         <h1>Huina a ne magazin</h1>
-        <img src="https://andreyazat5.github.io/Sunrise-sinema/image/mainblackadam.jpeg" >
+<!--        <img src="https://andreyazat5.github.io/Sunrise-sinema/image/mainblackadam.jpeg" >-->
         <p>rgerhejtrjrfjed</p>
         <button>Kupi</button>
     </div>
+    <form id="form">
+        <input type="text" placeholder="Name" id="user_name">
+        <input type="text" placeholder="Email" id="user_email">
+        <input type="text" placeholder="Phone" id="user_phone">
+        <button id="order">OK</button>
+    </form>
+    <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+<script>
+    let tg = window.Telegram.WebApp;
+    let buy = document.getElementById("buy");
+    let order = document.getElementById("order");
+
+    buy.addEventListener("click", () => {
+        document.getElementById("main").style.display = "none";
+        document.getElementById("form").style.display = "block";
+        document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name + " " ;
+    });
+
+    order.addEventListener("click", () => {
+        tg.close();
+    });
+</script>
+
 </body>
 </html>
