@@ -19,18 +19,20 @@
 <!--        <img src="https://andreyazat5.github.io/Sunrise-sinema/image/mainblackadam.jpeg" >-->
         <p>rgerhejtrjrfjed</p>
         <button>Kupi</button>
-    </div>
+
     <form id="form">
         <input type="text" placeholder="Name" id="user_name">
         <input type="text" placeholder="Email" id="user_email">
         <input type="text" placeholder="Phone" id="user_phone">
         <button id="order">OK</button>
     </form>
+    </div>
     <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
 <script>
     let tg = window.Telegram.WebApp;
     let buy = document.getElementById("buy");
     let order = document.getElementById("order");
+    tg.expand();
 
     buy.addEventListener("click", () => {
         document.getElementById("main").style.display = "none";
@@ -39,6 +41,9 @@
     });
 
     order.addEventListener("click", () => {
+        let name = document.getElementById("user_name");
+        let email = document.getElementById("user_email");
+        let phone = document.getElementById("user_phone");
         tg.close();
     });
 </script>
